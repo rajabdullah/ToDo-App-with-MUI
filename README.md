@@ -1,12 +1,40 @@
-# React + Vite
+# 📝 React + MUI ToDo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive, modern ToDo application built with React (v18) and Material UI (v7). It allows users to manage daily tasks with ease — add, edit, delete, filter, sort, and track completion status.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ⚙️ Setup Instructions
 
-## Expanding the ESLint configuration
+1. Clone the repository:
+   git clone https://github.com/your-username/todo-app.git
+   cd todo-app
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. Install dependencies:
+   npm install
+
+3. Run the development server:
+   npm run dev
+
+4. Open in browser: [http://localhost:5173](http://localhost:5173)
+
+---
+
+## ✅ Bonus Features Implemented
+
+- 🌗 Dark/Light Mode: toggle using MUI's theme system
+- 📂 LocalStorage persistence: (tasks are saved across page reloads)
+- 🧪 Filter tasks: All, Completed, Pending
+- ↕️ Sort tasks: By creation date or completion status
+- 🧹 Component-based architecture for clean and maintainable code
+- 📱 Fully responsive design (mobile, tablet, desktop)
+- 🖼 Scrollable task list with fixed form/filter at the top
+
+---
+
+## ⚖️ Decisions & Trade-offs
+
+- ❌ Drag-and-drop was skipped for simplicity; can be added later using `react-beautiful-dnd`.
+- ✅ Used Vite for a faster dev environment instead of Create React App.
+- 🔀 Used UUID for task IDs to avoid reliance on any backend or database.
+- 🧠 Tasks are stored in memory and localStorage — no backend API is used, keeping it lightweight.
