@@ -7,8 +7,6 @@ A responsive, modern ToDo application built with React (v18) and Material UI (v7
 ## ⚙️ Setup Instructions
 
 1. Clone the repository:
-   git clone https://github.com/your-username/todo-app.git
-   cd todo-app
 
 2. Install dependencies:
    npm install
